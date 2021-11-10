@@ -49,8 +49,10 @@ function Todojs(){
     e.preventDefault();
   }
     return(
-        <>
+        <div>
         <div className="container">
+          <div className="todojs__div">
+
           <h1 className="todo__title">Make Your Daily Routine ToDo</h1>
         <form className="todo__form" onKeyPress={handle} onSubmit={onSubmit}>
          <input placeholder="What do you want to do?" className="todo__input" type="text" />
@@ -70,7 +72,8 @@ function Todojs(){
           <img className="todo__img" src="https://picsum.photos/500/400" />
         </div>
       </div>
-        </>
+      </div>
+        </div>
     );
 }
 

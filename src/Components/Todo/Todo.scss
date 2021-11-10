@@ -44,6 +44,33 @@
     }
 }
 
+.todojs__div{
+    width: 50%;
+    margin: 40px auto;
+    border-radius: 10px;
+    box-shadow: 10px 10px 30px grey;
+    padding: 10px 0;
+}
+@media (max-width: 1000px){
+    .todojs__div{
+        width: 70%;
+    }
+}
+@media(max-width: 900px){
+    .todojs__div{
+        width: 80%;
+    }
+}
+@media(max-width: 800px){
+    .todojs__div{
+        width: 110%;
+    }
+}
+@media(max-width: 400px){
+    .todojs__div{
+        width: 125%;
+    }
+}
 
 @media(max-width: 500px){
     .todo{
@@ -66,5 +93,8 @@
             width: 300px;
             margin: 15px;
         }
+    }
+    .todojs__div{
+        width: 100%;
     }
 }
