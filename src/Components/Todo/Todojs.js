@@ -29,8 +29,7 @@ function Todojs(){
   }
   
   function handle(event){
-    if(event.code === 'Enter'){
-      
+    if(event.code === 'Space' || event.code === 'Enter'){
       let newTodo = {
         id: new Date().getTime(),
         content: event.target.value.trim(),
@@ -53,9 +52,9 @@ function Todojs(){
         <>
         <div className="container">
           <h1 className="todo__title">Make Your Daily Routine ToDo</h1>
-        <form className="todo__form" onSubmit={onSubmit} onKeyPress={handle}>
+        <form className="todo__form" onKeyPress={handle} onSubmit={onSubmit}>
          <input placeholder="What do you want to do?" className="todo__input" type="text" />
-         <button className="todo__btn" type={'submit'}>Click</button>
+         <button className="todo__btn">Click</button>
         </form>
 
     
