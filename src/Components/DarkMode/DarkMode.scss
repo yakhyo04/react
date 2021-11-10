@@ -1,0 +1,32 @@
+#darkMode {
+    background: transparent  no-repeat center;
+    background-size: 30px 30px;
+    width: 45px;
+    height: 45px;
+    filter: grayscale(100%);
+    border: none;
+    border-radius: 50%;
+    transition: background-color 0.3s ease-in-out, filter 0.3s ease-in-out;
+  }
+  
+  #darkMode:hover,
+  #darkMode:focus {
+    filter: none;
+    background-color: rgb(82, 78, 78);
+    cursor: pointer;
+  }
+  
+  #darkMode.clicked {
+    filter: none !important;
+    background-color: rgb(144, 137, 137);
+  }
+  // #image {
+//   width: 100%;
+//   height: 300px;
+//   background-attachment: fixed;
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   transition: background-image 0.7s ease-in-out;
+//   background-image: var(--image);
+// }

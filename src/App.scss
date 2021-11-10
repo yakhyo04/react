@@ -1,0 +1,74 @@
+.container{
+  width: 1140px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1000px){
+  .container{
+    width: 900px;
+  }
+}
+@media (max-width: 850px){
+  .container{
+    width: 700px;
+  }
+}
+@media (max-width: 650px){
+  .container{
+    width: 500px;
+  }
+}
+@media (max-width: 500px){
+  .container{
+    width: 400px;
+  }
+}
+@media (max-width: 400px){
+  .container{
+    width: 300px;
+  }
+}
+
+:root {
+  --blue: rgb(26, 57, 87);
+  --white: rgb(236, 236, 236);
+}
+body.light {
+  --background-color: var(--white);
+  --text-color: var(--blue);
+  --font-weight: 400;
+  color: #fff;
+  --image: url("./Components/image/nature.jpg");
+}
+body.dark {
+  --background-color: var(--blue);
+  --text-color: var(--white);
+  --font-weight: 500;
+  color: black;
+  --image: url("./Components/image/night.jpg");
+}
+#image {
+  width: 100%;
+  height: 300px;
+  margin-top: 50px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: background-image 0.7s ease-in-out;
+  background-image: var(--image);
+}
+body {
+  background: var(--background-color);
+  color: var(--text-color);
+  font-weight: var(--font-weight);
+  transition: background 0.3s ease-in-out, color 0.6s ease-in-out;
+}
+nav {
+  padding: 1rem 25%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background: var(--text-color);
+}

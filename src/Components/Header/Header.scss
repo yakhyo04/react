@@ -1,0 +1,52 @@
+.header{
+    &__div{
+        display: flex;
+        justify-content: space-between;
+        position: fixed;
+        width: 1140px;
+    }
+    &__btn{
+        background-color: rgb(81, 255, 0);
+        border: none;
+        padding: 10px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    &__select{
+        width: 200px;
+        text-align: center;
+        outline: none;
+        border: none;
+    }
+    &__nav{
+        border: 1px solid black;
+        margin-top: 50px;
+        padding: 20px;
+        text-align: center;
+    }
+}
+
+
+@media(max-width: 1000px){
+    .header__div{
+        width: 900px;
+    }
+}
+
+@media(max-width: 850px){
+    .header__div{
+        width: 700px;
+    }
+}
+
+@media(max-width: 650px){
+    .header__div{
+        width: 500px;
+    }
+}
+
+@media(max-width: 500px){
+    .header__div{
+        width: 400px;
+    }
+}
